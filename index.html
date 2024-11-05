@@ -13,70 +13,139 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/d5186fcd93.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d5186fcd93.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="bg-white min-h-screen text-black font-raleway ">
+  <body class="bg-white min-h-screen text-black font-raleway font-inter">
     <!-- navbar start -->
     <header class="p-10 container mx-auto">
-        <nav class="flex flex-col lg:flex-row justify-around items-center gap-10">
-            <div>
-                <h1 class=" font-extrabold text-4xl">P-Ticket</h1>
-            </div>
-            <div>
-                <ul class="flex space-x-2 md:space-x-10 text-xl">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Destination">Destination</a></li>
-                    <li><a href="#Search">Search</a></li>     
-                </ul>
-            </div>
-            <div>
-                <button class=" bg-[#1DD1001A] rounded-lg py-2 px-4 text-[20px] text-[#1DD100] border border-emerald-400">Bus <span class="ml-2"><i class="fa-solid fa-van-shuttle"></i></span></button>
-            </div>
-        </nav>
-        <!-- navbar end -->
+      <nav class="flex flex-col lg:flex-row justify-around items-center gap-10">
+        <div>
+          <h1 class="font-extrabold text-4xl">P-Ticket</h1>
+        </div>
+        <div>
+          <ul class="flex space-x-2 md:space-x-10 text-xl">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Destination">Destination</a></li>
+            <li><a href="#Search">Search</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="bg-[#1DD1001A] rounded-lg py-2 px-4 text-[20px] text-[#1DD100] border border-emerald-400"
+          >
+            Bus
+            <span class="ml-2"><i class="fa-solid fa-van-shuttle"></i></span>
+          </button>
+        </div>
+      </nav>
+      <!-- navbar end -->
     </header>
-    <main class="p-2 md:p-5 lg:pl-20 container mx-auto flex justify-center">
-        <!-- banner section start -->
-         <section class="flex flex-col justify-center">
-            <div class="bg-[url('images/banner.png')] bg-no-repeat bg-blend-darken bg-contain  md:min-w-[800px]  md:min-h-[550px] lg:min-w-[1250px] p-7 md:p-10">
-                <div class="text-center flex flex-col justify-center items-center md:pt-10 lg:pt-20 md:space-y-5">
-                    <h1 class="text-xl md:text-4xl lg:text-6xl font-extrabold text-white">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
-                    <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="bg-[#1DD100] md:text-[20px] font-bold p-2 md:p-4 rounded-lg">Buy Tickets</button>
-                </div>
+    <main class="p-2 md:p-5 lg:pl-20 container mx-auto flex flex-col justify-center items-center">
+      <!-- banner section start -->
+      <section class="flex flex-col justify-center ">
+        <div
+          class="bg-[url('images/banner.png')] bg-no-repeat bg-blend-darken bg-contain md:min-w-[800px] md:min-h-[550px] lg:min-w-[1250px] p-7 md:p-10"
+        >
+          <div
+            class="text-center flex flex-col justify-center items-center md:pt-10 lg:pt-20 md:space-y-5"
+          >
+            <h1
+              class="text-xl md:text-4xl lg:text-6xl font-extrabold text-white"
+            >
+              End-to-End Travel with <br /><span class="text-[#1DD100]"
+                >P Paribahan</span
+              >
+            </h1>
+            <p class="text-white">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button
+              class="bg-[#1DD100] md:text-[20px] font-bold p-2 md:p-4 rounded-lg"
+            >
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-10 m-5 md:-translate-y-56 lg:-translate-y-16"
+        >
+          <div
+            class="bg-[#FFFFFF] p-4 flex justify-center items-center gap-2 shadow-lg border-b-2 border-b-[#1DD100] rounded-lg"
+          >
+            <div>
+              <img class="w-10" src="./images/people.png" alt="" />
             </div>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-10 m-5 md:-translate-y-56 lg:-translate-y-16">
-                <div class="bg-[#FFFFFF] p-4 flex justify-center items-center gap-2 shadow-lg border-b-2 border-b-[#1DD100] rounded-lg ">
-                    <div>
-                        <img src="./images/people.png" alt="">
-                    </div>
-                    <div>
-                        <h2 class="text-xl font-bold font-inter"> 500 K+</h2>
-                        <p>Registered users</p>
-                    </div>
-                </div>
-                <div class="bg-[#FFFFFF] p-4 flex justify-center items-center gap-2 shadow-lg border-b-2 border-b-[#1DD100] rounded-lg ">
-                    <div>
-                        <img src="./images/ticket-cupon.png" alt="">
-                    </div>
-                    <div>
-                        <h2 class="text-xl font-bold font-inter"> 1.7 lacks</h2>
-                        <p>Tickets Sold</p>
-                    </div>
-                </div>
-                <div class="bg-[#FFFFFF] p-4 flex justify-center items-center gap-2 shadow-lg border-b-2 border-b-[#1DD100] rounded-lg ">
-                    <div>
-                        <img src="./images/stoppage.png" alt="">
-                    </div>
-                    <div>
-                        <h2 class="text-xl font-bold font-inter">80K+</h2>
-                        <p>Rental partners</p>
-                    </div>
-                </div>
+            <div>
+              <h2 class="text-xl font-bold font-inter">500 K+</h2>
+              <p>Registered users</p>
             </div>
-         </section>
-        <!-- banner section end -->
+          </div>
+          <div
+            class="bg-[#FFFFFF] p-4 flex justify-center items-center gap-2 shadow-lg border-b-2 border-b-[#1DD100] rounded-lg"
+          >
+            <div>
+              <img class=""  src="./images/ticket-cupon.png" alt="" />
+            </div>
+            <div>
+              <h2 class="text-xl font-bold font-inter">1.7 lacks</h2>
+              <p>Tickets Sold</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#FFFFFF] p-4 flex justify-center items-center gap-2 shadow-lg border-b-2 border-b-[#1DD100] rounded-lg"
+          >
+            <div>
+              <img class="w-12" src="./images/stoppage.png" alt="" />
+            </div>
+            <div>
+              <h2 class="text-xl font-bold font-inter">80K+</h2>
+              <p>Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+      <!-- offer section start -->
+      <section >
+        <h1 class="text-4xl text-center font-bold pb-6">Best offers for you</h1>
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
+          <div class="bg-[#FFBF0F] md:w-[570px] h-52 md:h-52 p-4 rounded-lg flex  items-center">
+            <p class="p-4">
+              <span class="text-xl md:text-4xl font-bold">15% OFF </span> <br> on your next purchase <br>
+              <span class="text-gray-400">use by January 2024</span>
+            </p>
+            <div>
+              <img class="" src="./images/cupon-devider.png" alt="">
+            </div>
+            <p class="md:p-4">
+              <span class="font-bold text-xl md:text-3xl">NEW15</span> <br>
+              <span class="text-gray-400">Coupon Code</span>
+            </p>
+          </div>
+          <div class="bg-[#F78C9C] md:w-[570px] h-52 md:h-52 p-4 rounded-lg flex  items-center">
+            <p class="p-2">
+              <span class="text-xl md:text-4xl font-bold">20% OFF </span> <br> on your next purchase <br>
+              <span class="text-gray-400">use by January 2024</span>
+            </p>
+            <div>
+              <img class="" src="./images/cupon-devider.png" alt="">
+            </div>
+            <p class="p-4">
+              <span class="font-bold md:text-3xl">Couple 20</span> <br>
+              <span class="text-gray-400">Coupon Code</span>
+            </p>
+          </div>
+        </div>
+        <div class="p-5 flex justify-center">
+          <button class="btn btn-outline btn-success">See All Offers</button>
+        </div>
+      </section>
+      <!-- offer section end -->
     </main>
     <footer></footer>
     <script src="./js/script.js"></script>
