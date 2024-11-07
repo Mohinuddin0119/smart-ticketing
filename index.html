@@ -166,7 +166,9 @@
           app. <br />The integrated testing features allow for a streamlined .
         </p>
         <!-- bus container 1 part -->
-        <div class="flex  justify-center items-center bg-[#FFFFFF] p-4 h-[380px]">
+        <div
+          class="flex justify-center items-center bg-[#FFFFFF] p-4 h-[380px]"
+        >
           <!-- bus info -->
           <div class="">
             <div class="flex justify-between items-center gap-2">
@@ -175,7 +177,9 @@
                   <img src="./images/bus-logo.png" alt="" />
                 </div>
                 <div>
-                  <h2 class="text-xl lg:text-3xl font-bold">Greenline Paribahan</h2>
+                  <h2 class="text-xl lg:text-3xl font-bold">
+                    Greenline Paribahan
+                  </h2>
                   <p>Coach-009-WEB ! AC_Business</p>
                 </div>
               </div>
@@ -202,21 +206,19 @@
               </div>
               <hr class="border-dashed dark:border-gray-400" />
               <div class="">
-                <div class="pt-4 flex justify-around items-center gap-2">
-                  <button
-                    class="bg-[#0307120D] rounded-lg p-2 text-[12px]"
-                  >
+                <div
+                  class="pt-4 flex flex-col md:flex-row justify-around items-center gap-2"
+                >
+                  <button class="bg-[#0307120D] rounded-lg p-2 text-[12px]">
                     Boarding Point - Laxmipur
                   </button>
-                  <button
-                    class="bg-[#0307120D] rounded-lg p-2 text-[12px]"
-                  >
+                  <button class="bg-[#0307120D] rounded-lg p-2 text-[12px]">
                     Dropping Point - Bogura
                   </button>
                   <button
                     class="bg-[#0307120D] rounded-lg py-2 p-2 text-[12px]"
                   >
-                  Est. Time - 11 Hour
+                    Est. Time - 11 Hour
                   </button>
                 </div>
               </div>
@@ -224,24 +226,156 @@
           </div>
           <!-- divider -->
           <div>
-            <img class="" src="./images/info-devider.png" alt="">
+            <img class="" src="./images/info-devider.png" alt="" />
           </div>
           <!--  -->
           <div class="space-y-3">
-            <img src="./images/fare.png" alt="">
+            <img src="./images/fare.png" alt="" />
             <p class="text-4xl font-bold">550 Taka</p>
             <p class="text-gray-500">Per Seat</p>
           </div>
         </div>
         <!-- part 2 -->
-        <div class="bg-[#FFFFFF]">
-            <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+        <div class="flex flex-col lg:flex-row justify-between">
+          <!-- seat plan and ... -->
+          <div class="lg:flex-1 bg-[#FFFFFF] p-4">
+            <h1 class="text-2xl font-semibold p-2">Select Your Seat</h1>
+            <hr class="border-dashed mb-2" />
             <!-- available and  selected-->
-            <div>
-              <div class="flex gap-2">              
-                <img src="./images/seat-gray.png" alt="">
-                <p>Available</p></div>
+            <div class="flex justify-between">
+              <div class="flex gap-2">
+                <img class="" src="./images/seat-gray.png" alt="" />
+                <p>Available</p>
+              </div>
+              <div class="flex gap-2">
+                <img class="" src="./images/seat-green-filled.png" alt="" />
+                <p>Selected</p>
+              </div>
             </div>
+            <hr class="border-dashed mt-2" />
+            <!-- driving img -->
+            <div class="flex justify-end my-4">
+              <img
+                class="bg-[#0307121A] px-6 py-2 rounded-lg"
+                src="./images/driving.png"
+                alt=""
+              />
+            </div>
+            <!-- seat plan -->
+            <div class="flex items-center justify-between md:gap-4">
+              <div class="lg:mr-4 lg:space-x-3 flex gap-2 items-center">
+                <h2>A</h2>
+                <button class="bg-[#03071233] px-3 md:px-6 py-2 rounded-lg">
+                  A1
+                </button>
+                <button class="bg-[#03071233] px-3 md:px-6 py-2 rounded-lg">
+                  A2
+                </button>
+              </div>
+              <div class="ml-1 lg:ml-4 lg:space-x-3">
+                <button class="bg-[#03071233] px-3 md:px-6 py-2 rounded-lg">
+                  A3
+                </button>
+                <button class="bg-[#03071233] px-3 md:px-6 py-2 rounded-lg">
+                  A4
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- divider -->
+          <!-- <div class="p-2 lg:mx-4">
+            <img src="./images/Line 1.png" alt="">
+          </div> -->
+          <!-- user select -->
+          <div class="lg:flex-1 bg-[#FFFFFF] md:p-4">
+            <h1 class="text-2xl font-semibold p-3">Select Your Seat</h1>
+            <hr class="border-dashed" />
+            <!-- bus info -->
+            <div class="bg-[#F7F8F8] p-4">
+              <div class="flex justify-between p-2">
+                <p class="text-xl font-bold">
+                  Seat
+                  <span class="bg-[#1DD100] text-[12px] px-1 text-white"
+                    >0</span
+                  >
+                </p>
+                <p class="text-xl font-bold">Class</p>
+                <p class="text-xl font-bold">Price</p>
+              </div>
+              <hr class="border-dashed" />
+              <!-- when click just added -->
+              <div class="p-4"></div>
+              <hr class="" />
+              <!-- total price -->
+              <div class="flex justify-between">
+                <h2 class="text-xl">Total Price</h2>
+                <p class="text-xl">BDT <span>0</span></p>
+              </div>
+              <!-- coupon  -->
+              <div
+                class="bg-[#FFFFFF] rounded-lg p-4 flex justify-between my-2"
+              >
+                <input
+                  class="bg-[#FFFFFF]"
+                  type="text"
+                  placeholder="Have any coupon code"
+                />
+                <button class="bg-[#1DD100] px-4 py-2 rounded-lg text-white">
+                  Apply
+                </button>
+              </div>
+              <!-- grand total -->
+              <div class="flex justify-between my-4">
+                <h2 class="text-xl">Grand Price</h2>
+                <p class="text-xl">BDT <span>0</span></p>
+              </div>
+            </div>
+            <!--  user input-->
+            <div class="p-4 space-y-4">
+              <!-- name -->
+              <div class="space-y-4">
+                <label class="font-bold text-xl" for="">Passenger Name*</label>
+                <br />
+                <input
+                  class="w-full px-4 py-3 bg-white border rounded-lg"
+                  type="text"
+                  placeholder="Enter your Name"
+                />
+              </div>
+              <!-- number -->
+              <div class="space-y-4">
+                <label class="font-bold text-xl" for="">Phone Number*</label>
+                <br />
+                <input
+                  class="w-full px-4 py-3 bg-white border rounded-lg"
+                  type="text"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <!-- email -->
+              <div class="space-y-4">
+                <label class="font-bold text-xl" for="">Email ID</label>
+                <br />
+                <input
+                  class="w-full px-4 py-3 bg-white border rounded-lg"
+                  type="text"
+                  placeholder="Enter your email id"
+                />
+              </div>
+              <!-- button -->
+              <div>
+                <button class="bg-[#1DD100] py-4 rounded-lg text-white w-full">
+                  Next
+                </button>
+              </div>
+              <!-- term and policy -->
+              <div class="flex justify-around text-[#03071299]">
+                <p class="underline">Terms and Conditions</p>
+                <p class="underline"> Cancellation policy</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- paribahan section end -->
